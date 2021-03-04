@@ -23,12 +23,12 @@ def spin_words(sentence):
     #print (lister)
 
     for word in lister:
-        if len(word) < 5:
+        if len(word) <=5:
             x= ' '.join(map(str, lister)) 
             reString+=x
             
             
-        else:
+        if len(word)>5:
             #reverse word spelling\
             x = (word[::-1])
             reString += ' '.join(x)
